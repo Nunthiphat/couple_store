@@ -6,7 +6,7 @@ import { GuestNavbar, AdminNavbar } from "../components/navbar"
 import { useSearchParams } from "next/navigation"
 import SearchKeyword from "@/components/searchKeyword"
 
-export default function Home() {
+export default function HomeClient() {
   const [products, setProducts] = useState([])
   const [sort, setSort] = useState("all")
   const [time, setTime] = useState("latest") // ✅ default ล่าสุดก่อน
