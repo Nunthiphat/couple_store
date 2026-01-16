@@ -84,7 +84,7 @@ export async function DELETE(req, { params }) {
   }
 
   // ✅ ถูกต้องแล้ว
-  const { id } = params
+  const { id } = await params
 
   const deleted = await Product.findByIdAndDelete(id)
 

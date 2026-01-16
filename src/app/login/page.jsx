@@ -27,8 +27,8 @@ export default function LoginPage() {
         <h2 className="text-2xl font-bold mb-4">Login</h2>
         <form onSubmit={handleSubmit}>
           <div className="mb-4">
-            <label htmlFor="email" className="block text-gray-700">Email</label>
-            <input type="email" id="email" className="w-full px-3 py-2 border rounded" onChange={(e) => setUsername(e.target.value)} />
+            <label htmlFor="text" className="block text-gray-700">Username</label>
+            <input type="text" id="text" className="w-full px-3 py-2 border rounded" onChange={(e) => setUsername(e.target.value)} />
           </div>
           <div className="mb-4">
             <label htmlFor="password" className="block text-gray-700">Password</label>
