@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export default function QRCodePage() {
   return (
-    <div className="min-h-screen bg-gray-100 flex items-center justify-center px-4">
+    <div className="min-h-screen bg-gray-100 flex items-center justify-center px-4 pt-0 -mt-16">
       <div className="bg-white rounded-xl shadow-lg p-6 max-w-sm w-full text-center">
         
         {/* Title */}
