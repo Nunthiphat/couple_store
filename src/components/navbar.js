@@ -40,7 +40,7 @@ export function GuestNavbar() {
           <div className="relative w-full">
             <input
               type="text"
-              placeholder="Search products..."
+              placeholder="ค้นหาสินค้า"
               className="
                 w-full rounded-md border border-gray-300 
                 px-3 py-2 text-sm
@@ -77,12 +77,12 @@ export function GuestNavbar() {
               hover:bg-gray-700 transition
             "
           >
-            Search
+            ค้นหา
           </button>
           
         </form>
         <div className="flex items-center gap-4">
-          <Link href="/login" type="button" className="border rounded-md px-3 py-1 bg-orange-500 text-gray-700 hover:text-gray-900 hover:bg-orange-600">Login</Link>
+          <Link href="/login" type="button" className="border rounded-md px-3 py-1 bg-orange-500 text-gray-700 hover:text-gray-900 hover:bg-orange-600">เข้าสู่ระบบ</Link>
         </div>
       </div>
     </header>
@@ -122,7 +122,7 @@ export function AdminNavbar() {
           <div className="relative w-full">
             <input
               type="text"
-              placeholder="Search products..."
+              placeholder="ค้นหาสินค้า"
               className="
                 w-full rounded-md border border-gray-300 
                 px-3 py-2 text-sm
@@ -158,7 +158,7 @@ export function AdminNavbar() {
               hover:bg-gray-700 transition
             "
           >
-            Search
+            ค้นหา
           </button>
         </form>
         <div className="flex items-center gap-4">

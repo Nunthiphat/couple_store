@@ -132,7 +132,7 @@ export default function Card({ product, isAdmin, refresh }) {
           </h2>
 
           {/* คำอธิบาย (จำกัด 3 บรรทัด + ตัวอักษรใหญ่ขึ้น) */}
-          <p className="text-gray-600 text-base line-clamp-3 leading-relaxed">
+          <p className="text-gray-600 text-base whitespace-pre-line leading-relaxed">
             {description}
           </p>
 

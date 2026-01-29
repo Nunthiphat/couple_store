@@ -121,7 +121,7 @@ export default function HomeClient() {
       </div>
 
       {/* ===== Content ===== */}
-      <div className="grid grid-cols-1 md:grid-cols-3 px-8 gap-6 mb-10">
+      <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 px-8 gap-6 mb-10">
         {Array.isArray(products) && products.map((p) => (
           <Card
             key={p._id}
