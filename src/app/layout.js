@@ -6,7 +6,9 @@ export default function RootLayout({ children }) {
       <body
         className="min-h-screen bg-slate-50"
       >
-        {children}
+        <main className="pt-16">
+          {children}
+        </main>
       </body>
     </html>
   );

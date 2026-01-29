@@ -127,22 +127,22 @@ export default function Card({ product, isAdmin, refresh }) {
           className="block p-4 hover:bg-gray-50 transition space-y-1"
         >
           {/* ชื่อสินค้า */}
-          <h2 className="text-xl font-bold leading-snug">
+          <h2 className="text-base sm:text-lg md:text-xl font-bold leading-snug">
             {name}
           </h2>
 
           {/* คำอธิบาย (จำกัด 3 บรรทัด + ตัวอักษรใหญ่ขึ้น) */}
-          <p className="text-gray-600 text-base whitespace-pre-line leading-relaxed">
+          <p className="text-sm sm:text-base leading-relaxed whitespace-pre-line text-gray-600">
             {description}
           </p>
 
           {/* หมวดหมู่ (ใหญ่ขึ้น + ชัดขึ้น) */}
-          <p className="text-gray-700 text-base font-medium mt-1">
+          <p className="text-sm sm:text-base font-medium text-gray-700 mt-1">
             หมวดหมู่: <span className="text-gray-900">{categoryLabel}</span>
           </p>
 
           {/* ราคา */}
-          <p className="text-lg font-semibold mt-2 text-blue-600">
+          <p className="text-base sm:text-lg md:text-xl font-semibold text-blue-600 mt-2">
             {price} บาท
           </p>
         </Link>

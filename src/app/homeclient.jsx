@@ -93,11 +93,11 @@ export default function HomeClient() {
       )}  */}
 
       {/* ===== Filter Bar ===== */}
-      <div className="px-8 pb-8 flex justify-between items-center pt-20">
+      <div className="px-8 pb-8 flex flex-wrap gap-3 justify-between items-center pt-6">
         <select
           value={sort}
           onChange={(e) => setSort(e.target.value)}
-          className="border px-3 py-2 bg-white rounded"
+          className="border rounded px-3 py-2 text-sm sm:text-base bg-white"
         >
           <option value="all">ทั้งหมด</option>
           <option value="dim">แบบทึบ</option>
@@ -113,7 +113,7 @@ export default function HomeClient() {
         <select
           value={time}
           onChange={(e) => setTime(e.target.value)}
-          className="border px-3 py-2 bg-white rounded"
+          className="border rounded px-3 py-2 text-sm sm:text-base bg-white"
         >
           <option value="latest">ล่าสุด → เก่าที่สุด</option>
           <option value="oldest">เก่าที่สุด → ล่าสุด</option>
@@ -121,7 +121,7 @@ export default function HomeClient() {
       </div>
 
       {/* ===== Content ===== */}
-      <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 px-8 gap-6 mb-10">
+      <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 px-4 sm:px-8 gap-4 sm:gap-6 mb-10">
         {Array.isArray(products) && products.map((p) => (
           <Card
             key={p._id}
@@ -146,7 +146,7 @@ export default function HomeClient() {
       )}
 
       {!loading && products.length === 0 && (
-        <p className="text-center text-gray-500 mb-10">
+        <p className="text-center text-sm sm:text-base text-gray-500 mb-10">
           ไม่มีสินค้า
         </p>
       )}
