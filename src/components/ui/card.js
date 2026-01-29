@@ -66,7 +66,7 @@ export default function Card({ product, isAdmin, refresh }) {
         className="bg-white rounded-lg shadow-md overflow-hidden relative"
       >
         {/* Image */}
-        <div className="relative w-full h-60 overflow-hidden">
+        <div className="relative w-full h-44 sm:h-52 md:h-60 overflow-hidden">
           <img
             src={currentImage}
             alt={name}
@@ -132,17 +132,17 @@ export default function Card({ product, isAdmin, refresh }) {
           </h2>
 
           {/* คำอธิบาย (จำกัด 3 บรรทัด + ตัวอักษรใหญ่ขึ้น) */}
-          <p className="text-sm sm:text-base leading-relaxed whitespace-pre-line text-gray-600">
+          <p className="text-xs sm:text-sm md:text-base text-gray-600 whitespace-pre-line leading-relaxed">
             {description}
           </p>
 
           {/* หมวดหมู่ (ใหญ่ขึ้น + ชัดขึ้น) */}
-          <p className="text-sm sm:text-base font-medium text-gray-700 mt-1">
+          <p className="text-xs sm:text-sm text-gray-700 font-medium mt-1">
             หมวดหมู่: <span className="text-gray-900">{categoryLabel}</span>
           </p>
 
           {/* ราคา */}
-          <p className="text-base sm:text-lg md:text-xl font-semibold text-blue-600 mt-2">
+          <p className="text-sm sm:text-base md:text-lg font-semibold mt-2 text-blue-600">
             {price} บาท
           </p>
         </Link>

@@ -28,10 +28,10 @@ export function GuestNavbar() {
 
   return (
     <header className="fixed top-0 left-0 z-50 w-full bg-gray-100/90 backdrop-blur shadow-sm">
-      <div className="mx-auto max-w-7xl px-4 py-3 flex items-center justify-between">
+      <div className="mx-auto max-w-7xl px-4 py-2 sm:py-3 flex items-center justify-between">
         
         {/* Logo / Title */}
-        <h1 className="text-base sm:text-lg md:text-2xl font-semibold text-gray-800 tracking-wide">
+        <h1 className="text-sm sm:text-base md:text-2xl font-semibold text-gray-800 tracking-wide">
           Couple&apos;s Shop
         </h1>
 
@@ -41,7 +41,7 @@ export function GuestNavbar() {
             <input
               type="text"
               placeholder="ค้นหาสินค้า"
-              className="w-full rounded-md border border-gray-300 px-3 py-2 text-sm sm:text-base focus:outline-none focus:ring-2 focus:ring-gray-400 focus:border-gray-400"
+              className="w-full rounded-md border border-gray-300 px-2 sm:px-3 py-1.5 sm:py-2 text-xs sm:text-sm md:text-base focus:outline-none focus:ring-2 focus:ring-gray-400"
               value={query}
               onChange={(e) => setQuery(e.target.value)}
             />
@@ -53,11 +53,7 @@ export function GuestNavbar() {
                   setQuery("")
                   router.push("/")
                 }}
-                className="
-                  absolute right-3 top-1/2 -translate-y-1/2
-                  text-gray-400 hover:text-red-500
-                  text-sm
-                "
+                className="absolute right-3 top-1/2 -translate-y-1/2 text-xs sm:text-sm text-gray-400 hover:text-red-500"
               >
                 ✕
               </button>
@@ -66,14 +62,14 @@ export function GuestNavbar() {
         
           <button
             type="submit"
-            className="rounded-md bg-gray-800 px-3 sm:px-4 py-2 text-sm sm:text-base font-medium text-white hover:bg-gray-700 transition"
+            className="rounded-md bg-gray-800 px-2.5 sm:px-4 py-1.5 sm:py-2 text-xs sm:text-sm md:text-base font-medium text-white hover:bg-gray-700 transition"
           >
             ค้นหา
           </button>
           
         </form>
         <div className="flex items-center gap-4">
-          <Link href="/login" type="button" className="border rounded-md px-3 py-1.5 text-sm sm:text-base bg-orange-500 text-gray-700 hover:text-gray-900 hover:bg-orange-600">เข้าสู่ระบบ</Link>
+          <Link href="/login" type="button" className="border rounded-md px-2.5 sm:px-3 py-1 sm:py-1.5 text-xs sm:text-sm md:text-base bg-orange-500 text-gray-700 hover:text-gray-900 hover:bg-orange-600 transition">เข้าสู่ระบบ</Link>
         </div>
       </div>
     </header>
@@ -104,8 +100,8 @@ export function AdminNavbar() {
 
   return (
     <header className="fixed top-0 left-0 z-50 w-full bg-gray-100/90 backdrop-blur shadow-sm">
-      <div className="mx-auto max-w-7xl px-4 py-3 flex items-center justify-between">
-        <h1 className="text-base sm:text-lg md:text-2xl font-semibold text-gray-800 tracking-wide">
+      <div className="mx-auto max-w-7xl px-4 py-2 sm:py-3 flex items-center justify-between">
+        <h1 className="text-sm sm:text-base md:text-2xl font-semibold text-gray-800 tracking-wide">
           Couple&apos;s Shop
         </h1>
         {/* Search */}
@@ -114,7 +110,7 @@ export function AdminNavbar() {
             <input
               type="text"
               placeholder="ค้นหาสินค้า"
-              className="w-full rounded-md border border-gray-300 px-3 py-2 text-sm sm:text-base focus:outline-none focus:ring-2 focus:ring-gray-400 focus:border-gray-400"
+              className="w-full rounded-md border border-gray-300 px-2 sm:px-3 py-1.5 sm:py-2 text-xs sm:text-sm md:text-base focus:outline-none focus:ring-2 focus:ring-gray-400"
               value={query}
               onChange={(e) => setQuery(e.target.value)}
             />
@@ -126,11 +122,7 @@ export function AdminNavbar() {
                   setQuery("")
                   router.push("/")
                 }}
-                className="
-                  absolute right-3 top-1/2 -translate-y-1/2
-                  text-gray-400 hover:text-red-500
-                  text-sm text-bold
-                "
+                className="absolute right-3 top-1/2 -translate-y-1/2 text-xs sm:text-sm text-gray-400 hover:text-red-500"
               >
                 ✕
               </button>
@@ -138,13 +130,13 @@ export function AdminNavbar() {
           </div>
           <button
             type="submit"
-            className="rounded-md bg-gray-800 px-3 sm:px-4 py-2 text-sm sm:text-base font-medium text-white hover:bg-gray-700 transition"
+            className="rounded-md bg-gray-800 px-2.5 sm:px-4 py-1.5 sm:py-2 text-xs sm:text-sm md:text-base font-medium text-white hover:bg-gray-700 transition"
           >
             ค้นหา
           </button>
         </form>
         <div className="flex items-center gap-4">
-          <Link href="/admin" type="button" className="border rounded-md px-3 py-1.5 text-sm sm:text-base bg-orange-500 text-gray-700 hover:text-gray-900 hover:bg-orange-600">Add</Link>
+          <Link href="/admin" type="button" className="border rounded-md px-2.5 sm:px-3 py-1 sm:py-1.5 text-xs sm:text-sm md:text-base bg-orange-500 text-gray-700 hover:text-gray-900 hover:bg-orange-600 transition">Add</Link>
         </div>
       </div>
     </header>
