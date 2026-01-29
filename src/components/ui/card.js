@@ -101,7 +101,7 @@ export default function Card({ product, isAdmin, refresh }) {
                   e.stopPropagation()
                   setOpen(true)
                 }}
-                className="absolute top-2 right-2 bg-blue-600 text-white text-sm px-3 py-1 rounded z-10"
+                className="absolute top-2 right-2 bg-blue-600 text-white text-xs sm:text-sm px-2 sm:px-3 py-1 rounded z-10"
               >
                 แก้ไข
               </button>
@@ -111,7 +111,7 @@ export default function Card({ product, isAdmin, refresh }) {
                   e.stopPropagation()
                   handleDelete()
                 }}
-                className="absolute top-12 right-2 bg-red-600 text-white text-sm px-3 py-1 rounded z-10"
+                className="absolute top-8 sm:top-12 right-2 bg-red-600 text-white text-xs sm:text-sm px-2 sm:px-3 py-1 rounded z-10"
               >
                 ลบ
               </button>
