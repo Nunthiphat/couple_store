@@ -127,7 +127,7 @@ export default function Card({ product, isAdmin, refresh }) {
           className="block p-4 hover:bg-gray-50 transition space-y-1"
         >
           {/* ชื่อสินค้า */}
-          <h2 className="text-base sm:text-lg md:text-xl font-bold leading-snug">
+          <h2 className="text-sm sm:text-base md:text-lg font-bold leading-snug">
             {name}
           </h2>
 

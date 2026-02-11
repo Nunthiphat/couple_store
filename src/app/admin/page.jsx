@@ -94,6 +94,8 @@ export default function AdminPage() {
         <input
           name="price"
           type="number"
+          step="any"
+          min="0"
           placeholder="ราคา"
           className="border p-2 w-full rounded"
           required
