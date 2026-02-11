@@ -127,12 +127,12 @@ export default function Card({ product, isAdmin, refresh }) {
           className="block p-4 hover:bg-gray-50 transition space-y-1"
         >
           {/* ชื่อสินค้า */}
-          <h2 className="text-sm sm:text-base md:text-lg font-bold leading-snug">
+          <h2 className="text-xs sm:text-sm md:text-base font-bold leading-snug">
             {name}
           </h2>
 
           {/* คำอธิบาย (จำกัด 3 บรรทัด + ตัวอักษรใหญ่ขึ้น) */}
-          <p className="text-xs sm:text-sm md:text-base text-gray-600 whitespace-pre-line leading-relaxed">
+          <p className="text-[11px] sm:text-xs md:text-sm text-gray-600 whitespace-pre-line leading-relaxed">
             {description}
           </p>
 
